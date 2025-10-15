@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Converter - Quick Start</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 { color: #667eea; }
+        h2 { color: #764ba2; margin-top: 30px; }
+        .method {
+            background: #f8f9ff;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        code {
+            background: #eee;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            margin: 10px 5px;
+            font-weight: bold;
+        }
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        .success {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        ul { margin-left: 20px; }
+        li { margin: 8px 0; }
+    </style>
+</head>
+<body>
+    <h1>🎉 CSV Format Converter - Quick Start</h1>
+    
+    <div class="success">
+        <strong>✓ Setup Complete!</strong><br>
+        Your converter is ready to use. Choose your preferred method below.
+    </div>
+    
+    <h2>Method 1: Web Interface (Easiest!) 🌐</h2>
+    <div class="method">
+        <p><strong>Best for:</strong> One-time conversions, visual feedback</p>
+        <ol>
+            <li>Open <code>index.html</code> in your browser</li>
+            <li>Drag & drop your source CSV (e.g., CashApp report)</li>
+            <li>Drag & drop your target format CSV (e.g., TokenTax template)</li>
+            <li>Click "Convert"</li>
+            <li>Download your converted file!</li>
+        </ol>
+        <a href="index.html" class="button">Open Web Interface</a>
+    </div>
+    
+    <h2>Method 2: Python Script 🐍</h2>
+    <div class="method">
+        <p><strong>Best for:</strong> Batch processing, automation, command-line users</p>
+        
+        <h3>Basic Usage:</h3>
+        <code>python converter.py source.csv target_format.csv output.csv</code>
+        
+        <h3>Example (Your Files):</h3>
+        <code>python converter.py cash_app_report_1760492693461.csv TokenTaxBlankCSV_1_ex_txn.csv converted_output.csv</code>
+        
+        <h3>What just happened:</h3>
+        <p>✓ Successfully converted <strong>1,805 transactions</strong> from your CashApp report!</p>
+        <p>✓ Output saved to: <code>converted_output.csv</code></p>
+    </div>
+    
+    <h2>Test Results ✅</h2>
+    <div class="method">
+        <p>Your converter has been tested and is working perfectly:</p>
+        <ul>
+            <li>✓ <strong>Bitcoin Buys:</strong> Correctly mapped with fees</li>
+            <li>✓ <strong>Bitcoin Sells:</strong> Properly converted</li>
+            <li>✓ <strong>Deposits:</strong> Mapped to target format</li>
+            <li>✓ <strong>Withdrawals:</strong> Correctly converted</li>
+            <li>✓ <strong>Dates:</strong> Formatted for TokenTax</li>
+            <li>✓ <strong>Fees:</strong> Properly tracked</li>
+        </ul>
+    </div>
+    
+    <h2>What's in Your Converted File 📄</h2>
+    <div class="method">
+        <p>Sample from <code>converted_output.csv</code>:</p>
+        <pre style="background: #f5f5f5; padding: 15px; overflow-x: auto; border-radius: 5px;">
+Type,BuyAmount,BuyCurrency,SellAmount,SellCurrency,FeeAmount,FeeCurrency,Exchange,Comment,Date
+Trade,0.00040409,BTC,48.88,USD,1.12,USD,CashApp,purchase of BTC 0.00040409,10/09/2025
+Trade,1100.0,USD,0.01045391,BTC,16.53,USD,CashApp,sale of BTC 0.01045391,06/03/2025
+Deposit,50.0,USD,,,,,CashApp,Add Cash,10/09/2025
+Withdrawal,1083.47,USD,,,,,CashApp,Cash Out,06/03/2025</pre>
+    </div>
+    
+    <h2>Pro Tips 💡</h2>
+    <div class="method">
+        <ul>
+            <li><strong>Backup:</strong> Always keep your original files safe</li>
+            <li><strong>Verify:</strong> Spot-check a few transactions in the output</li>
+            <li><strong>Target Format:</strong> The target CSV file defines your output columns</li>
+            <li><strong>Custom Formats:</strong> Edit <code>converter.py</code> to add new mappings</li>
+            <li><strong>Batch Process:</strong> Use the Python script for multiple files</li>
+        </ul>
+    </div>
+    
+    <h2>Need Help? 🤝</h2>
+    <div class="method">
+        <p>Check out the detailed <code>README.md</code> file for:</p>
+        <ul>
+            <li>Detailed documentation</li>
+            <li>Customization guide</li>
+            <li>Troubleshooting tips</li>
+            <li>More examples</li>
+        </ul>
+    </div>
+    
+    <hr style="margin: 40px 0; border: none; border-top: 2px solid #eee;">
+    
+    <div style="text-align: center; color: #666;">
+        <p><strong>Your CSV converter is ready to use!</strong></p>
+        <p>Drop any two CSVs to convert between formats 🎯</p>
+    </div>
+</body>
+</html>

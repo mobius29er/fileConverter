@@ -1,0 +1,31 @@
+# CSV files (user data)
+cash_app_report_*.csv
+tokentax_cashapp_converted.csv
+converted_output*.csv
+*.csv
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Keep the example/template CSV
+!TokenTaxBlankCSV_1_ex_txn.csv
